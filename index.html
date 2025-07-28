@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Hoja de Vida</title>
+    </head>
+    <body>
+        <header id="inicio">
+            <h1>Sebastian Prado Escobar - Desarrollador Web</h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#informacion-basica">Información Basicá</a></li>
+                <li><a href="#habilidades">Tecnologías/Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="sobre-mi">
+                <img
+                    width="220px"
+                    src="./assets/image-perfil.jpeg"
+                    alt="Imagen Perfil"
+                />
+
+                <h2>Sobre mí</h2>
+                <ul>
+                    <li>Edad: 25 años</li>
+                    <li>Profesión: Desarrollador Web</li>
+                    <li>Experiencia: 2 años</li>
+                    <li>Ubicación: Ciudad de ejemplo</li>
+                    <li>
+                        <a
+                            href="https://github.com/sebas-pr2000/sebas-pr2000"
+                            target="_blank"
+                            >GitHub Sebastian</a
+                        >
+                    </li>
+                </ul>
+                <p>
+                    Tengo 25 años y me apasiona mucho la tecnología y el
+                    aprender cosas nuevas, desde muy pequeño he tenido ese
+                    entusiasmo actualmente aprendí más a fondo sobre la
+                    programación y la posibilidad de crear casi todo lo que
+                    imaginemos por eso me gusta aprender cada día algo nuevo
+                    respecto a este mundo.
+                </p>
+            </section>
+
+            <section id="informacion-basica">
+                <h2>Información Básica</h2>
+                <table>
+                    <tr>
+                        <th>Sección</th>
+                        <th>Detalles</th>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td>Juan Pérez</td>
+                    </tr>
+                    <tr>
+                        <td>Edad</td>
+                        <td>25 años</td>
+                    </tr>
+                    <tr>
+                        <td>Profesión</td>
+                        <td>Desarrollador Web</td>
+                    </tr>
+                    <tr>
+                        <td>Experiencia</td>
+                        <td>2 años en desarrollo web frontend y backend</td>
+                    </tr>
+                    <tr>
+                        <td>Educación</td>
+                        <td>
+                            Título técnico en Manejo Ambiental, Sistemas Basico,
+                            intermedio CES
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="habilidades">
+                <h3>tecnologías - Habilidades</h3>
+
+                <ol>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>React.js</li>
+                    <li>Redux</li>
+                    <li>Angular</li>
+                    <li>Node.js</li>
+                    <li>Express</li>
+                    <li>MySQL</li>
+                    <li>MongoDB</li>
+                    <li>Git y GitHub</li>
+                    <li>Responsive Design</li>
+                </ol>
+            </section>
+
+            <section id="contacto">
+                <h2>Formulario de Contacto</h2>
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label><br />
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        required
+                    /><br /><br />
+
+                    <label for="email">Correo Electrónico:</label><br />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        required
+                    /><br /><br />
+
+                    <label for="mensaje">Mensaje:</label><br />
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="4"
+                        required
+                    ></textarea
+                    ><br /><br />
+
+                    <input type="submit" value="Enviar" />
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>
+                © 2025 Sebastian Prado Escobar. Todos los derechos reservados.
+            </p>
+        </footer>
+    </body>
+</html>
