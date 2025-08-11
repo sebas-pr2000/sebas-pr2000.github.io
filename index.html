@@ -4,6 +4,14 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Hoja de Vida</title>
+        <link rel="stylesheet" href="style/style.css" />
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+        </style>
     </head>
     <body>
         <header id="inicio">
@@ -11,57 +19,65 @@
         </header>
 
         <nav>
-            <ul>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-mi">Sobre mí</a></li>
-                <li><a href="#informacion-basica">Información Basicá</a></li>
-                <li><a href="#habilidades">Tecnologías/Habilidades</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="list-nav">
+                <li class="list-li"><a href="#inicio">Inicio</a></li>
+                <li class="list-li"><a href="#sobre-mi">Sobre mí</a></li>
+                <li class="list-li">
+                    <a href="#informacion-basica">Información Basicá</a>
+                </li>
+                <li class="list-li">
+                    <a href="#habilidades">Tecnologías/Habilidades</a>
+                </li>
+                <li class="list-li"><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
-        <main>
+        <main id="main">
             <section id="sobre-mi">
                 <img
+                    class="image"
                     width="220px"
                     src="./assets/image-perfil.jpeg"
                     alt="Imagen Perfil"
                 />
 
-                <h2>Sobre mí</h2>
-                <ul>
-                    <li>Edad: 25 años</li>
-                    <li>Profesión: Desarrollador Web</li>
-                    <li>Experiencia: 2 años</li>
-                    <li>Ubicación: Ciudad de ejemplo</li>
-                    <li>
-                        <a
-                            href="https://github.com/sebas-pr2000/sebas-pr2000"
-                            target="_blank"
-                            >GitHub Sebastian</a
-                        >
-                    </li>
-                </ul>
-                <p>
-                    Tengo 25 años y me apasiona mucho la tecnología y el
-                    aprender cosas nuevas, desde muy pequeño he tenido ese
-                    entusiasmo actualmente aprendí más a fondo sobre la
-                    programación y la posibilidad de crear casi todo lo que
-                    imaginemos por eso me gusta aprender cada día algo nuevo
-                    respecto a este mundo.
-                </p>
+                <div>
+                    <h2>Sobre mí</h2>
+                    <ul>
+                        <li>Edad: 25 años</li>
+                        <li>Profesión: Desarrollador Web</li>
+                        <li>Experiencia: 2 años</li>
+                        <li>Ubicación: Cali valle del Cauca</li>
+                        <li>
+                            <a
+                                class="link-github"
+                                href="https://github.com/sebas-pr2000/sebas-pr2000"
+                                target="_blank"
+                                >GitHub Sebastian</a
+                            >
+                        </li>
+                    </ul>
+                    <p>
+                        Tengo 25 años y me apasiona mucho la tecnología y el
+                        aprender cosas nuevas, desde muy pequeño he tenido ese
+                        entusiasmo actualmente aprendí más a fondo sobre la
+                        programación y la posibilidad de crear casi todo lo que
+                        imaginemos por eso me gusta aprender cada día algo nuevo
+                        respecto a este mundo.
+                    </p>
+                </div>
             </section>
 
             <section id="informacion-basica">
                 <h2>Información Básica</h2>
-                <table>
+                <table class="table">
                     <tr>
                         <th>Sección</th>
                         <th>Detalles</th>
                     </tr>
                     <tr>
                         <td>Nombre</td>
-                        <td>Juan Pérez</td>
+                        <td>Sebastian Prado</td>
                     </tr>
                     <tr>
                         <td>Edad</td>
@@ -106,38 +122,44 @@
 
             <section id="contacto">
                 <h2>Formulario de Contacto</h2>
-                <form action="#" method="post">
-                    <label for="nombre">Nombre:</label><br />
+                <form class="form" action="#" method="post">
+                    <label class="label-form" for="nombre">Nombre:</label><br />
                     <input
+                        class="input-form"
                         type="text"
                         id="nombre"
                         name="nombre"
                         required
                     /><br /><br />
 
-                    <label for="email">Correo Electrónico:</label><br />
+                    <label class="label-form" for="email"
+                        >Correo Electrónico:</label
+                    ><br />
                     <input
+                        class="input-form"
                         type="email"
                         id="email"
                         name="email"
                         required
                     /><br /><br />
 
-                    <label for="mensaje">Mensaje:</label><br />
+                    <label class="label-form" for="mensaje">Mensaje:</label
+                    ><br />
                     <textarea
+                        class="input-form"
                         id="mensaje"
                         name="mensaje"
-                        rows="4"
+                        rows="6"
                         required
                     ></textarea
                     ><br /><br />
 
-                    <input type="submit" value="Enviar" />
+                    <input class="button" type="submit" value="Enviar" />
                 </form>
             </section>
         </main>
 
-        <footer>
+        <footer id="footer">
             <p>
                 © 2025 Sebastian Prado Escobar. Todos los derechos reservados.
             </p>
